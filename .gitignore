@@ -27,6 +27,10 @@ out/
 build
 dist
 
+# Versioned static registry payloads are release artifacts, not build byproducts.
+!apps/registry/
+!apps/registry/dist/
+!apps/registry/dist/**
 
 # Debug
 npm-debug.log*

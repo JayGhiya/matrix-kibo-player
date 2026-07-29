@@ -9,6 +9,8 @@
   ],
   "scripts": {
     "build": "turbo build",
+    "build:registry": "node scripts/build-registry.mjs",
+    "prebuild": "pnpm run build:registry",
     "dev": "turbo dev",
     "check": "npx ultracite@latest check",
     "fix": "npx ultracite@latest fix",
